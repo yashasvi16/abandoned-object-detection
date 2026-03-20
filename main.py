@@ -70,7 +70,7 @@ def main(video_path, bg_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Abandoned Object Detection Pipeline")
     parser.add_argument("-v", "--video", type=str, required=True, help="Path to the video file")
-    # NEW: Added an argument for the background image
+    # Added an argument for the background image
     parser.add_argument("-b", "--background", type=str, default=None, help="Path to the empty background image")
     args = parser.parse_args()
 
